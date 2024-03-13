@@ -28,8 +28,6 @@ const getRandomId = (min, max) => {
     }
 
     displayedAdvices.push(id)
-    console.log(displayedAdvices)
-    console.log(id)
 
     return id
 }
@@ -42,8 +40,6 @@ const fetchAdvice = (id) => {
             return response.json()
         })
         .then((data) => {
-            console.log(data)
-            console.log("id porady: " + data.slip.id)
             setAdvice(data)
         })
         .catch((error) => {
