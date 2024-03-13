@@ -1,1 +1,14 @@
 @import 'reset-css';
+@import 'variables';
+@import 'advice';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    background-color: $dark-blue;
+    height: 100vh;
+    padding: 16px;
+    overflow: hidden;
+}
